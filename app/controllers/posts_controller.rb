@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
 
     def show
-
+      @comments = Comment.where(post_id: @post)
     end
 
 
