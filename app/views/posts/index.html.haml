@@ -19,9 +19,10 @@
 			.post_content
 				.title
 					%h2= link_to post.title, post
+					%p= link_to post.category, post
 				.data.clearfix
 					%p.username
-						Shared by
+						Author:
 						= post.user.name
 					%p.buttons
 						%span
