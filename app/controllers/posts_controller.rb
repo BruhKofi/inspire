@@ -13,8 +13,6 @@ class PostsController < ApplicationController
     end
 
 
-
-
     def new
       @post = current_user.posts.build
     end
